@@ -67,7 +67,7 @@ class MyButtons {
 
   static Widget primary(
       BuildContext context, String label, Function() function) {
-    return showMyButtons(context, label, kBlack, kAppPrimary, function,
+    return showMyButtons(context, label, kWhite, kAppPrimary, function,
         outlined: false, gradiented: false);
   }
 

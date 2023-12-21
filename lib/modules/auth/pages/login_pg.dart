@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/extensions/x_extensions.dart';
 
+import '../../../widgets/x_widgets.dart';
 import '../../home/x_homes.dart';
 import '../x_auths.dart';
 
@@ -59,16 +61,9 @@ class _LoginPageState extends State<LoginPage> {
               obscureText: true,
             ),
             const SizedBox(height: 28.0),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => HomePage()));
-                },
-                child: const Text('Login'),
-              ),
-            ),
+            MyButtons.primary(context, 'Login', () {
+              context.push(HomePage());
+            }),
             const SizedBox(height: 16.0),
             //register page
             Row(
@@ -77,8 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                 const Text('Don\'t have an account?'),
                 TextButton(
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const RegisterPage()));
+                    context.push(RegisterPage());
                   },
                   child: const Text('Register'),
                 ),
