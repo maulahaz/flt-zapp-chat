@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'configs/x_configs.dart';
-import 'modules/home/x_homes.dart';
-// import 'modules/sliver_screen/x_sliver_screens.dart';
-// import 'modules/x_modules.dart';
+import 'modules/auth/x_auths.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter App!!',
       theme: MyThemes.lightMode,
       darkTheme: MyThemes.darkMode,
-      // home: const ModulesView(),
-      // home: SliverView(),
-      home: HomePage(),
+      home: RegisterPage(),
     );
   }
 }
