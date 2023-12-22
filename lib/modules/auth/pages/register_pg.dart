@@ -41,7 +41,7 @@ class _RegisterPageState extends State<RegisterPage> {
             const SizedBox(height: 16.0),
             //title Code with Bahri
             const Text(
-              'Code with Bahri',
+              'MHz Chat',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 24,
@@ -49,7 +49,6 @@ class _RegisterPageState extends State<RegisterPage> {
                 color: Colors.blueGrey,
               ),
             ),
-
             const SizedBox(height: 48.0),
             TextField(
               controller: _nameController,
